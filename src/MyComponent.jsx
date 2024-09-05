@@ -6,10 +6,14 @@ const MyComponent = () => {
     const dispatch = useDispatch();
   return (
     <>
-    <div>{count}</div>
+    <div style={{display:"flex", justifyContent:"center",alignItems:"center" ,height:"100vh"}}>
+    <div style={{display:"flex",flexDirection:"column"}}>
+    <div>Count:{count}</div>
     <div>
         <button onClick={()=>dispatch({type:"Increment"})}>Increment</button>
         <button onClick={()=>dispatch({type:"Decrement"})}>Decrement</button>
+    </div>
+    </div>
     </div>
     </>
   )
